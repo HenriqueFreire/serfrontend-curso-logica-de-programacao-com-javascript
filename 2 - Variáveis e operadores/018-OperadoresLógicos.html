@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lógica de programção com JS</title>
+</head>
+<body>
+  <h1>Lógica de programção com JS</h1>
+  <script>
+    let nota1 = parseFloat(prompt('Digite um número.'))
+    let nota2 = parseFloat(prompt('Digite outro número.'))
+    let media = (nota1 + nota2) / 2
+
+    if (nota1 == 0 || nota2 == 0 || media <= 5) {
+      alert('Desculpe. Não foi dessa vez')
+    } else {
+      alert('Parabéns! Você foi aprovado!')
+    }
+    /*
+    || significa "OU"
+    && significa "E"
+    != significa "DIFERENTE"
+    == significa "IGUAL"
+    !  significa "NEGAÇÃO"
+    */
+  </script>
+</body>
+</html>
