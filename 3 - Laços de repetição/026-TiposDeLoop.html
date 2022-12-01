@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lógica de programção com JS</title>
+</head>
+<body>
+  <h1>Lógica de programção com JS</h1>
+  <script>
+    let number = parseInt(prompt('Digite um número.'))
+    let indice = 1
+
+    while (indice <= 100) {
+      document.write(`${number} X ${indice} = ${number * indice} <br>`)
+      indice++
+    }
+
+     do{
+      document.write(`${number} X ${indice} = ${number * indice} <br>`)
+      indice++
+    } while (indice <= 100) // Não importa a condição esse loop executará pelo menos uma vez
+
+    for (indice = 0; indice <= 100; indice++) {
+      document.write(`${number} X ${indice} = ${number * indice} <br>`)
+      
+    }
+  </script>
+</body>
+</html>

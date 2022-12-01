@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lógica de programção com JS</title>
+</head>
+<body>
+  <h1>Lógica de programção com JS</h1>
+  <script>
+    let multiplicator = parseFloat(prompt('Digite um número.'))
+
+    for (indice = 0; indice <= 100; indice++) {
+      document.write(`${multiplicator} X ${indice} = ${multiplicator * indice} <br>`)
+      
+      if (indice % 10 === 0 && indice > 0){
+        document.write('<hr>')
+      } 
+    }    
+  </script>
+</body>
+</html>
