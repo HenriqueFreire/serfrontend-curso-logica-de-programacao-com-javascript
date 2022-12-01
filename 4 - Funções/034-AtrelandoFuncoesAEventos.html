@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Logica de Programação Javascript</title>
+      <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Lógica de programação com Javascript</h1>
+        
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button >Limpar Tabuada</button>
+    <div id="output"></div>
+    <script>
+      let output = document.querySelector('#output')
+      let mensagem = ''
+
+      function mostrarTabuada(){
+        let n = parseFloat(prompt('digite um numero'))
+                
+        limparTabuada()        
+        
+        for (let i = 0; i <= 1000; i++) {
+          mensagem += `${n} X ${i} = ${n * i} <br>`  
+          }      
+        
+        output.innerHTML = mensagem
+      }
+        </script>
+    </body>
+</html

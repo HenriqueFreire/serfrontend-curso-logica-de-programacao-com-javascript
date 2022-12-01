@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <button onclick="mostrarArea(comprimento, largura)">mostrar área</button>
+        
+        <div id="output"></div>
+        
+        <script>
+            let largura = parseFloat(prompt('Digite a largura'))
+            let comprimento = parseFloat(prompt('Digite a comprimento'))
+
+            function escreve(content){
+                var output = document.querySelector('#output');
+                output.innerHTML = `Área Total: ${content}m²`;
+            }
+
+            function mostrarArea(comprimento, largura) {
+              escreve(comprimento * largura)
+            }
+
+
+        </script>
+    </body>
+</html>
