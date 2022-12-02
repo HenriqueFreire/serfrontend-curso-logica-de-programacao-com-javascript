@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        <div id="output"></div>
+        <script>
+          let output = document.getElementById('output') 
+          let semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+          let hoje = new Date()
+          let diaDaSemana = hoje.getDay()
+          
+          output.innerHTML = `Hoje é ${semana[diaDaSemana]}`
+        </script>
+    </body>
+</html>
