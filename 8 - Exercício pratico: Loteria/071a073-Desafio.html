@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+ 
+        <script>
+        let sortiados = []
+
+        function sortear() {
+          return Math.floor(Math.random() * 60)
+        }
+
+        function imprimeSortiados(msg) {
+          document.getElementById('output').innerHTML = 'Resultado do Sorteio: ' + msg
+        }
+
+        function verificaSortiados() {
+          let numero = null
+
+          while(sortiados.length < 6){
+            numero = sortear()
+            
+            if (sortiados.indexOf(numero) == -1) {
+              sortiados.push(numero)
+            }            
+          }
+          
+          numero = sortiados.join(' - ')
+          
+          imprimeSortiados(numero)
+        }
+   
+        verificaSortiados()
+              
+        </script>
+      </body>
+</html>
